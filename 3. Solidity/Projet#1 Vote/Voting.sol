@@ -105,7 +105,7 @@ contract Voting is Ownable{
 
 
     /* getStatus : 
-        -- Whitelisters can visualise current workflowStatus.
+        -- access : admin
     */
     function getStatus() public onlyOwner view returns( WorkflowStatus ){
 
