@@ -185,7 +185,6 @@ contract Voting is Ownable{
     */
     function setYourVote( uint _votedProposalId )public onlyWhitelisters onlyProposalsCreated onlyStatus( WorkflowStatus.VotingSessionStarted ){
 
-
         require(_votedProposalId < proposals.length, "no proposal has this ID" );
         require(!voters[msg.sender].hasVoted,"you cannot voted several times");
         voters[ msg.sender ].votedProposalId = _votedProposalId;
