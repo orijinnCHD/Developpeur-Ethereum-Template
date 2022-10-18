@@ -246,7 +246,7 @@ contract Voting is Ownable{
 
 
     /* bonus ResetTheVote : 
-        -- access : smartcontract( this )
+        -- access : admin
         -- reset variable voter( votedId , hasVoted ) ,proposal[](votedCount)
         -- status : come back to VotingSessionStarted
     */
